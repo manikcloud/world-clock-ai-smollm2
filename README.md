@@ -10,6 +10,7 @@ The AI assistant is context-aware and knows the current UTC time, allowing you t
 - 🤖 **AI Chat**: Chat with a local LLM (`smollm2`) running on your machine.
 - 🐳 **Dockerized**: Easy to deploy with a single container (connecting to host AI).
 - ⚡ **Cyberpunk UI**: Modern, responsive neon-styled interface.
+<img width="1647" height="974" alt="image" src="https://github.com/user-attachments/assets/ba281b07-439d-4882-ae2b-9cca44e771c3" />
 
 ## Prerequisites
 
