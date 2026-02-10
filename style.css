@@ -1,0 +1,173 @@
+:root {
+    --bg-color: #0d0d12;
+    --card-bg: #1a1a24;
+    --text-primary: #ffffff;
+    --accent-color: #00f3ff;
+    --secondary-accent: #ff0055;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: var(--accent-color);
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+}
+
+.clock-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.clock-card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.clock-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.clock-card.local {
+    border-color: var(--secondary-accent);
+    box-shadow: 0 0 20px rgba(255, 0, 85, 0.2);
+}
+
+.city-name {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.time-display {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.date-display {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* Chat Styles */
+.chat-container {
+    width: 100%;
+    max-width: 800px;
+    background: var(--card-bg);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 243, 255, 0.3);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    padding: 1rem;
+    background: rgba(0, 243, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chat-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.message {
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    max-width: 70%;
+    line-height: 1.4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background: #2d2d3a;
+    color: white;
+    border-bottom-left-radius: 0;
+}
+
+.user-message {
+    align-self: flex-end;
+    background: #004d4f;
+    color: white;
+    border-bottom-right-radius: 0;
+}
+
+.chat-input-area {
+    display: flex;
+    padding: 1rem;
+    background: var(--card-bg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    gap: 1rem;
+}
+
+input {
+    flex: 1;
+    padding: 0.8rem;
+    background: #0a0a0e;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+button {
+    background: var(--accent-color);
+    color: black;
+    border: none;
+    padding: 0 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: white;
+}

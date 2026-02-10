@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock Worldwide</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>DIGITAL CLOCK WORLDWIDE</h1>
+
+        <div class="clock-grid">
+            <!-- Clock cards will be updated by JS -->
+            <div class="clock-card local">
+                <div class="city-name">LOCAL TIME</div>
+                <div class="time-display" id="time-local">--:--:--</div>
+                <div class="date-display" id="date-local">Loading...</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="city-name">NEW YORK</div>
+                <div class="time-display" id="time-ny">--:--:--</div>
+                <div class="date-display" id="date-ny">Loading...</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="city-name">LONDON</div>
+                <div class="time-display" id="time-london">--:--:--</div>
+                <div class="date-display" id="date-london">Loading...</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="city-name">TOKYO</div>
+                <div class="time-display" id="time-tokyo">--:--:--</div>
+                <div class="date-display" id="date-tokyo">Loading...</div>
+            </div>
+
+            <div class="clock-card utc">
+                <div class="city-name">UTC</div>
+                <div class="time-display" id="time-utc">--:--:--</div>
+                <div class="date-display" id="date-utc">Loading...</div>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>AI ASSISTANT (Smollm2)</h2>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">Hello! I am your AI assistant. Ask me anything about time, the world,
+                    or just chat!</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="send-btn">SEND</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
